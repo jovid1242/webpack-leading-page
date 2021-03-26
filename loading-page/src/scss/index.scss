@@ -1,0 +1,13 @@
+@import "header";
+@import "main";
+
+section {
+    width: 100%;
+    height: 800px;
+    line-height: 1.25em;
+    position: relative;
+}
+
+.py-5 {
+    padding-bottom: 3rem !important;
+}

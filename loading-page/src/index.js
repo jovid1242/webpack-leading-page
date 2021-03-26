@@ -1,3 +1,2 @@
 import './scss/index.scss'
-
-console.log('Working!')
+import 'bootstrap/dist/css/bootstrap.css';
