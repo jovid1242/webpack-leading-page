@@ -88,7 +88,6 @@
                 color: #fff;
             }
 
-            /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
             .btn-brand-02:hover,
             .btn-brand-02:focus {
                 background-color: #6d14ae;
@@ -96,14 +95,12 @@
                 color: #fff;
             }
 
-            /* line 172, src/assets/scss/components/_components.buttons.scss */
             .btn-brand-02.btn-transparent {
                 background-color: rgba(150, 41, 230, 0.6);
                 border-color: transparent;
                 color: #fff;
             }
 
-            /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
             .btn-brand-02.btn-transparent:hover,
             .btn-brand-02.btn-transparent:focus {
                 background-color: rgba(150, 41, 230, 0.9);
@@ -142,6 +139,10 @@
 }
 
 .promo-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
     .effect-2 {
         position: absolute;
         bottom: -70px;
@@ -152,5 +153,156 @@
 
     .opacity-1 {
         opacity: 0.05;
+    }
+
+    .section-heading {
+        // position: absolute;
+        margin: 15px;
+
+        h1 {
+            margin-bottom: 0.938rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            line-height: 1.25;
+            color: #1b2e4b;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .card-body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1.25rem;
+    }
+
+    .card {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #ffffff;
+        background-clip: border-box;
+        border: 1px solid rgba(72, 94, 144, 0.16);
+        border-radius: 0.25rem;
+    }
+
+
+    .single-promo-card {
+        border-radius: 1rem;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .single-promo-card.single-promo-hover {
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .single-promo-card.single-promo-hover:hover {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+        box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+        color: #fff;
+    }
+
+    .single-promo-card.single-promo-hover:hover span,
+    .single-promo-card.single-promo-hover:hover h5 {
+        color: #fff !important;
+    }
+
+    .single-promo-card.single-promo-hover:hover:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        background-color: #6730e3;
+    }
+
+    .single-promo-card.single-promo-hover:before {
+        content: '';
+        position: absolute;
+        right: -55px;
+        width: 95px;
+        height: 95px;
+        bottom: -50px;
+        border-radius: 35px;
+        background-color: #6730e3;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        z-index: -1;
+    }
+
+    .single-promo-card.single-promo-hover-2 {
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+
+    .single-promo-card.single-promo-hover-2:hover {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+        box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+        background-color: #6730e3;
+        color: #fff;
+    }
+
+    .single-promo-card.single-promo-hover-2:hover span,
+    .single-promo-card.single-promo-hover-2:hover h5 {
+        color: #fff !important;
+    }
+
+    .single-promo-card:hover {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+        box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .hero-slider-content {
+        position: relative;
+        margin: 10px;
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        p {
+            font-weight: 700;
+            line-height: 1.5;
+            font-family: -apple-system,
+                'Open Sans',
+                'Helvetica Neue',
+                sans-serif;
+        }
+    }
+
+    .img-wrap {
+        padding: 10px;
     }
 }
